@@ -3,12 +3,12 @@
   */
 object UnicodeStringProduct {
   def ComputeStringProduct(s: String) : Long = {
-    s.foldLeft(1)(_*_)
+    s.foldLeft(1L)(_*_)
   }
 
   def main(args: Array[String]): Unit = {
     println("Hello".product.toLong)
-    println("Hello".map(_.toInt).product)
+    println("Hello".map(_.toLong).product)
     println(ComputeStringProduct("Hello"))
   }
 }
